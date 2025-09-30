@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zamówienia hurtowe</title>
+    <link rel="stylesheet" href="styl4.css" />
+  </head>
+  <body>
+    <div id="baner">
+      <h1>Sieci komputerowe</h1>
+    </div>
+    <div id="lewy">
+      <h2>Aktualizacja i zamówienia materiałów</h2>
+      <p>Do wewnętrznego użytku firmy</p>
+      <img src="obraz.png" alt="sieć komputerowa" />
+    </div>
+    <div id="prawy">
+      <table>
+        <tr>
+          <th>Produkt</th>
+          <th>Jednostka</th>
+          <th>Dostępna ilość</th>
+          <th>Aktualizacja</th>
+          <th>Zamówienie</th>
+        </tr>
+        <tr>
+          <td id="prod1">Skrętka U/UTP drut</td>
+          <td>metr</td>
+          <td id="ilosc_1">20</td>
+          <td><button onclick="aktualizuj(1)">Aktualizuj</button></td>
+          <td><button onclick="zamawiajaca(1)">Zamów</button></td>
+        </tr>
+        <tr>
+          <td id="prod2">Skrętka U/UTP linka</td>
+          <td>metr</td>
+          <td id="ilosc_2">2</td>
+          <td><button onclick="aktualizuj(2)">Aktualizuj</button></td>
+          <td><button onclick="zamawiajaca(2)">Zamów</button></td>
+        </tr>
+        <tr>
+          <td id="prod3">Wtyki 8P8C</td>
+          <td>sztuki</td>
+          <td id="ilosc_3">10</td>
+          <td><button onclick="aktualizuj(3)">Aktualizuj</button></td>
+          <td><button onclick="zamawiajaca(3)">Zamów</button></td>
+        </tr>
+        <tr>
+          <td id="prod4">Moduły Keystone</td>
+          <td>sztuki</td>
+          <td id="ilosc_4">30</td>
+          <td><button onclick="aktualizuj(4)">Aktualizuj</button></td>
+          <td><button onclick="zamawiajaca(4)">Zamów</button></td>
+        </tr>
+      </table>
+    </div>
+    <div id="stopka">
+      <a href="http://sieci.pl/" target="_blank">Nasza strona internetowa</a>
+      <p>Stronę przygotował: Adam Strużyk 5TI</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
