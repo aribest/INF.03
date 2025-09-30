@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep-rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header id="baner">
+        <h1>Zarejestruj się w naszym sklepie</h1>
+    </header>
+    <aside id="boczny">
+        <img src="obraz.png" alt="promocje">
+        <h2>Sprawdź promocje</h2>
+        <table>
+            <tr>
+                <th>co?</th>
+                <th>ile taniej?</th>
+            </tr>
+            <tr>
+                <td>ubrania</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>buty</td>
+                <td>25%</td>
+            </tr>
+        </table>
+    </aside>
+
+    <main>
+        <article id="glowny">
+            <button onclick="zmien(1)">Klient</button>
+            <button onclick="zmien(2)">Adres</button>
+            <button onclick="zmien(3)">Kontakt</button>
+
+            <article id="blok1">
+                <p>Imię</p>
+                <input type="text" placeholder="Wpisz dane..." onfocusout="pasek()" id="imie">
+                <p>Nazwisko</p>
+                <input type="text" onfocusout="pasek()" id="nazwisko">
+                <p>Data urodzenia</p>
+                <input type="date" onfocusout="pasek()" id="rokUr">
+            </article>
+            
+            <article id="blok2">
+                <p>Ulica</p>
+                <input type="text" onfocusout="pasek()" id="ulica">
+                <p>Numer</p>
+                <input type="number" onfocusout="pasek()" id="numer">
+                <p>Miasto</p>
+                <input type="text" onfocusout="pasek()" id="miasto">
+            </article>
+            <article id="blok3">
+                <p>Numer komórkowy</p>
+                <input type="tel" id="nrtel">
+                <label><input type="checkbox" onfocusout="pasek()" id="rodo">Akceptuję RODO</label> <br>
+                <button onclick="zatwierdz()">Zatwierdz dane</button>
+            </article>
+        </article>
+        <section id="pasek">
+            <section id="postep"></section>
+        </section>
+    </main>
+
+    <footer id="stopka">
+        <h4>Rejestrację do sklepu wykonał: Adam Strużyk 5TI</h4>
+    </footer>
+</body>
+</html>
